@@ -16,6 +16,7 @@
 		19BE5CC427720BEE00382451 /* SkyskannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CC327720BEE00382451 /* SkyskannerTests.swift */; };
 		19BE5CCE27720BEE00382451 /* SkyskannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CCD27720BEE00382451 /* SkyskannerUITests.swift */; };
 		19BE5CD027720BEE00382451 /* SkyskannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CCF27720BEE00382451 /* SkyskannerUITestsLaunchTests.swift */; };
+		19BE5CDD2772130C00382451 /* SkyskanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CDC2772130C00382451 /* SkyskanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		19BE5CC927720BEE00382451 /* SkyskannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyskannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BE5CCD27720BEE00382451 /* SkyskannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskannerUITests.swift; sourceTree = "<group>"; };
 		19BE5CCF27720BEE00382451 /* SkyskannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19BE5CDC2772130C00382451 /* SkyskanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				19BE5CAC27720BEC00382451 /* AppDelegate.swift */,
 				19BE5CAE27720BEC00382451 /* SceneDelegate.swift */,
 				19BE5CB027720BEC00382451 /* ViewController.swift */,
+				19BE5CDC2772130C00382451 /* SkyskanView.swift */,
 				19BE5CB227720BEC00382451 /* Main.storyboard */,
 				19BE5CB527720BEE00382451 /* Assets.xcassets */,
 				19BE5CB727720BEE00382451 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				19BE5CB127720BEC00382451 /* ViewController.swift in Sources */,
 				19BE5CAD27720BEC00382451 /* AppDelegate.swift in Sources */,
 				19BE5CAF27720BEC00382451 /* SceneDelegate.swift in Sources */,
+				19BE5CDD2772130C00382451 /* SkyskanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
