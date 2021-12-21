@@ -10,13 +10,15 @@
 		19BE5CAD27720BEC00382451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CAC27720BEC00382451 /* AppDelegate.swift */; };
 		19BE5CAF27720BEC00382451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CAE27720BEC00382451 /* SceneDelegate.swift */; };
 		19BE5CB127720BEC00382451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CB027720BEC00382451 /* ViewController.swift */; };
-		19BE5CB427720BEC00382451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BE5CB227720BEC00382451 /* Main.storyboard */; };
 		19BE5CB627720BEE00382451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BE5CB527720BEE00382451 /* Assets.xcassets */; };
 		19BE5CB927720BEE00382451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BE5CB727720BEE00382451 /* LaunchScreen.storyboard */; };
 		19BE5CC427720BEE00382451 /* SkyskannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CC327720BEE00382451 /* SkyskannerTests.swift */; };
 		19BE5CCE27720BEE00382451 /* SkyskannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CCD27720BEE00382451 /* SkyskannerUITests.swift */; };
 		19BE5CD027720BEE00382451 /* SkyskannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CCF27720BEE00382451 /* SkyskannerUITestsLaunchTests.swift */; };
 		19BE5CDD2772130C00382451 /* SkyskanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CDC2772130C00382451 /* SkyskanView.swift */; };
+		57A16FDE92EEE1139EECCEAD /* Pods_Skyskanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028F7003844E3111E3052A50 /* Pods_Skyskanner.framework */; };
+		5FB4783FB036E5970641443B /* Pods_Skyskanner_SkyskannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAA97F7DDE91659F46A6CE2 /* Pods_Skyskanner_SkyskannerUITests.framework */; };
+		60C6194B5F8C05CFCF92D953 /* Pods_SkyskannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8C9989B78FEF1B1CC39D66 /* Pods_SkyskannerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028F7003844E3111E3052A50 /* Pods_Skyskanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyskanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0993D3CCC77A278B77D7B2E4 /* Pods-SkyskannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyskannerTests.release.xcconfig"; path = "Target Support Files/Pods-SkyskannerTests/Pods-SkyskannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B2FF2C4796511AE04E16520 /* Pods-Skyskanner-SkyskannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner-SkyskannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Skyskanner-SkyskannerUITests/Pods-Skyskanner-SkyskannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B8C9989B78FEF1B1CC39D66 /* Pods_SkyskannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyskannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1123812AE81453B79B03CA43 /* Pods-Skyskanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner.release.xcconfig"; path = "Target Support Files/Pods-Skyskanner/Pods-Skyskanner.release.xcconfig"; sourceTree = "<group>"; };
+		12ACA681F3E3A987C1BFCBC9 /* Pods-Skyskanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner.debug.xcconfig"; path = "Target Support Files/Pods-Skyskanner/Pods-Skyskanner.debug.xcconfig"; sourceTree = "<group>"; };
 		19BE5CA927720BEC00382451 /* Skyskanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyskanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BE5CAC27720BEC00382451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19BE5CAE27720BEC00382451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		19BE5CB027720BEC00382451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19BE5CB327720BEC00382451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19BE5CB527720BEE00382451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19BE5CB827720BEE00382451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19BE5CBA27720BEE00382451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		19BE5CCD27720BEE00382451 /* SkyskannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskannerUITests.swift; sourceTree = "<group>"; };
 		19BE5CCF27720BEE00382451 /* SkyskannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		19BE5CDC2772130C00382451 /* SkyskanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskanView.swift; sourceTree = "<group>"; };
+		3AAA97F7DDE91659F46A6CE2 /* Pods_Skyskanner_SkyskannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyskanner_SkyskannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6033F1E71795FE32B5CA040B /* Pods-SkyskannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyskannerTests.debug.xcconfig"; path = "Target Support Files/Pods-SkyskannerTests/Pods-SkyskannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECB8E43C0B5475B500889A0D /* Pods-Skyskanner-SkyskannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner-SkyskannerUITests.release.xcconfig"; path = "Target Support Files/Pods-Skyskanner-SkyskannerUITests/Pods-Skyskanner-SkyskannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A16FDE92EEE1139EECCEAD /* Pods_Skyskanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C6194B5F8C05CFCF92D953 /* Pods_SkyskannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB4783FB036E5970641443B /* Pods_Skyskanner_SkyskannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,8 @@
 				19BE5CC227720BEE00382451 /* SkyskannerTests */,
 				19BE5CCC27720BEE00382451 /* SkyskannerUITests */,
 				19BE5CAA27720BEC00382451 /* Products */,
+				936C58383DB5A35D5C3DA7DB /* Pods */,
+				92044B22DA024C1246946337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +120,6 @@
 				19BE5CAE27720BEC00382451 /* SceneDelegate.swift */,
 				19BE5CB027720BEC00382451 /* ViewController.swift */,
 				19BE5CDC2772130C00382451 /* SkyskanView.swift */,
-				19BE5CB227720BEC00382451 /* Main.storyboard */,
 				19BE5CB527720BEE00382451 /* Assets.xcassets */,
 				19BE5CB727720BEE00382451 /* LaunchScreen.storyboard */,
 				19BE5CBA27720BEE00382451 /* Info.plist */,
@@ -130,6 +144,30 @@
 			path = SkyskannerUITests;
 			sourceTree = "<group>";
 		};
+		92044B22DA024C1246946337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				028F7003844E3111E3052A50 /* Pods_Skyskanner.framework */,
+				3AAA97F7DDE91659F46A6CE2 /* Pods_Skyskanner_SkyskannerUITests.framework */,
+				0B8C9989B78FEF1B1CC39D66 /* Pods_SkyskannerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		936C58383DB5A35D5C3DA7DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12ACA681F3E3A987C1BFCBC9 /* Pods-Skyskanner.debug.xcconfig */,
+				1123812AE81453B79B03CA43 /* Pods-Skyskanner.release.xcconfig */,
+				0B2FF2C4796511AE04E16520 /* Pods-Skyskanner-SkyskannerUITests.debug.xcconfig */,
+				ECB8E43C0B5475B500889A0D /* Pods-Skyskanner-SkyskannerUITests.release.xcconfig */,
+				6033F1E71795FE32B5CA040B /* Pods-SkyskannerTests.debug.xcconfig */,
+				0993D3CCC77A278B77D7B2E4 /* Pods-SkyskannerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19BE5CD327720BEE00382451 /* Build configuration list for PBXNativeTarget "Skyskanner" */;
 			buildPhases = (
+				303DD093F96E5B7EF3A4371A /* [CP] Check Pods Manifest.lock */,
 				19BE5CA527720BEC00382451 /* Sources */,
 				19BE5CA627720BEC00382451 /* Frameworks */,
 				19BE5CA727720BEC00382451 /* Resources */,
+				7A9F42B2EE7BF8232C39E21E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19BE5CD627720BEE00382451 /* Build configuration list for PBXNativeTarget "SkyskannerTests" */;
 			buildPhases = (
+				4866D9663D94E90DEB185875 /* [CP] Check Pods Manifest.lock */,
 				19BE5CBB27720BEE00382451 /* Sources */,
 				19BE5CBC27720BEE00382451 /* Frameworks */,
 				19BE5CBD27720BEE00382451 /* Resources */,
@@ -172,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19BE5CD927720BEE00382451 /* Build configuration list for PBXNativeTarget "SkyskannerUITests" */;
 			buildPhases = (
+				397D89C4F51D160E5F4CDBF9 /* [CP] Check Pods Manifest.lock */,
 				19BE5CC527720BEE00382451 /* Sources */,
 				19BE5CC627720BEE00382451 /* Frameworks */,
 				19BE5CC727720BEE00382451 /* Resources */,
+				87095F10862EAF6FD1549CAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,7 +279,6 @@
 			files = (
 				19BE5CB927720BEE00382451 /* LaunchScreen.storyboard in Resources */,
 				19BE5CB627720BEE00382451 /* Assets.xcassets in Resources */,
-				19BE5CB427720BEC00382451 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		303DD093F96E5B7EF3A4371A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skyskanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		397D89C4F51D160E5F4CDBF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skyskanner-SkyskannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4866D9663D94E90DEB185875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyskannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9F42B2EE7BF8232C39E21E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skyskanner/Pods-Skyskanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skyskanner/Pods-Skyskanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skyskanner/Pods-Skyskanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87095F10862EAF6FD1549CAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skyskanner-SkyskannerUITests/Pods-Skyskanner-SkyskannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skyskanner-SkyskannerUITests/Pods-Skyskanner-SkyskannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skyskanner-SkyskannerUITests/Pods-Skyskanner-SkyskannerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19BE5CA527720BEC00382451 /* Sources */ = {
@@ -301,14 +446,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		19BE5CB227720BEC00382451 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19BE5CB327720BEC00382451 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		19BE5CB727720BEE00382451 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +575,7 @@
 		};
 		19BE5CD427720BEE00382451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12ACA681F3E3A987C1BFCBC9 /* Pods-Skyskanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,7 +586,7 @@
 				INFOPLIST_FILE = Skyskanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,6 +604,7 @@
 		};
 		19BE5CD527720BEE00382451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1123812AE81453B79B03CA43 /* Pods-Skyskanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,7 +615,7 @@
 				INFOPLIST_FILE = Skyskanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,6 +633,7 @@
 		};
 		19BE5CD727720BEE00382451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6033F1E71795FE32B5CA040B /* Pods-SkyskannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +659,7 @@
 		};
 		19BE5CD827720BEE00382451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0993D3CCC77A278B77D7B2E4 /* Pods-SkyskannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +685,7 @@
 		};
 		19BE5CDA27720BEE00382451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2FF2C4796511AE04E16520 /* Pods-Skyskanner-SkyskannerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +709,7 @@
 		};
 		19BE5CDB27720BEE00382451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB8E43C0B5475B500889A0D /* Pods-Skyskanner-SkyskannerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
