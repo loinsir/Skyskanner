@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190E0ED8277400D8000E0D05 /* StorageTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E0ED7277400D8000E0D05 /* StorageTabViewController.swift */; };
 		19BE5CAD27720BEC00382451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CAC27720BEC00382451 /* AppDelegate.swift */; };
 		19BE5CAF27720BEC00382451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CAE27720BEC00382451 /* SceneDelegate.swift */; };
-		19BE5CB127720BEC00382451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CB027720BEC00382451 /* ViewController.swift */; };
+		19BE5CB127720BEC00382451 /* ScanTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CB027720BEC00382451 /* ScanTabViewController.swift */; };
 		19BE5CB627720BEE00382451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BE5CB527720BEE00382451 /* Assets.xcassets */; };
 		19BE5CB927720BEE00382451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BE5CB727720BEE00382451 /* LaunchScreen.storyboard */; };
 		19BE5CC427720BEE00382451 /* SkyskannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CC327720BEE00382451 /* SkyskannerTests.swift */; };
 		19BE5CCE27720BEE00382451 /* SkyskannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CCD27720BEE00382451 /* SkyskannerUITests.swift */; };
 		19BE5CD027720BEE00382451 /* SkyskannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CCF27720BEE00382451 /* SkyskannerUITestsLaunchTests.swift */; };
 		19BE5CDD2772130C00382451 /* SkyskanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE5CDC2772130C00382451 /* SkyskanView.swift */; };
+		19DD541A2772B1F70057E557 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD54192772B1F70057E557 /* BaseTabBarController.swift */; };
 		57A16FDE92EEE1139EECCEAD /* Pods_Skyskanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028F7003844E3111E3052A50 /* Pods_Skyskanner.framework */; };
 		5FB4783FB036E5970641443B /* Pods_Skyskanner_SkyskannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAA97F7DDE91659F46A6CE2 /* Pods_Skyskanner_SkyskannerUITests.framework */; };
 		60C6194B5F8C05CFCF92D953 /* Pods_SkyskannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8C9989B78FEF1B1CC39D66 /* Pods_SkyskannerTests.framework */; };
@@ -45,10 +47,11 @@
 		0B8C9989B78FEF1B1CC39D66 /* Pods_SkyskannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyskannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1123812AE81453B79B03CA43 /* Pods-Skyskanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner.release.xcconfig"; path = "Target Support Files/Pods-Skyskanner/Pods-Skyskanner.release.xcconfig"; sourceTree = "<group>"; };
 		12ACA681F3E3A987C1BFCBC9 /* Pods-Skyskanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner.debug.xcconfig"; path = "Target Support Files/Pods-Skyskanner/Pods-Skyskanner.debug.xcconfig"; sourceTree = "<group>"; };
+		190E0ED7277400D8000E0D05 /* StorageTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTabViewController.swift; sourceTree = "<group>"; };
 		19BE5CA927720BEC00382451 /* Skyskanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyskanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BE5CAC27720BEC00382451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19BE5CAE27720BEC00382451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19BE5CB027720BEC00382451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19BE5CB027720BEC00382451 /* ScanTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTabViewController.swift; sourceTree = "<group>"; };
 		19BE5CB527720BEE00382451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19BE5CB827720BEE00382451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19BE5CBA27720BEE00382451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		19BE5CCD27720BEE00382451 /* SkyskannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskannerUITests.swift; sourceTree = "<group>"; };
 		19BE5CCF27720BEE00382451 /* SkyskannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		19BE5CDC2772130C00382451 /* SkyskanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyskanView.swift; sourceTree = "<group>"; };
+		19DD54192772B1F70057E557 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		3AAA97F7DDE91659F46A6CE2 /* Pods_Skyskanner_SkyskannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyskanner_SkyskannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6033F1E71795FE32B5CA040B /* Pods-SkyskannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyskannerTests.debug.xcconfig"; path = "Target Support Files/Pods-SkyskannerTests/Pods-SkyskannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECB8E43C0B5475B500889A0D /* Pods-Skyskanner-SkyskannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyskanner-SkyskannerUITests.release.xcconfig"; path = "Target Support Files/Pods-Skyskanner-SkyskannerUITests/Pods-Skyskanner-SkyskannerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +122,9 @@
 			children = (
 				19BE5CAC27720BEC00382451 /* AppDelegate.swift */,
 				19BE5CAE27720BEC00382451 /* SceneDelegate.swift */,
-				19BE5CB027720BEC00382451 /* ViewController.swift */,
+				19BE5CB027720BEC00382451 /* ScanTabViewController.swift */,
+				190E0ED7277400D8000E0D05 /* StorageTabViewController.swift */,
+				19DD54192772B1F70057E557 /* BaseTabBarController.swift */,
 				19BE5CDC2772130C00382451 /* SkyskanView.swift */,
 				19BE5CB527720BEE00382451 /* Assets.xcassets */,
 				19BE5CB727720BEE00382451 /* LaunchScreen.storyboard */,
@@ -164,7 +170,6 @@
 				6033F1E71795FE32B5CA040B /* Pods-SkyskannerTests.debug.xcconfig */,
 				0993D3CCC77A278B77D7B2E4 /* Pods-SkyskannerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -406,9 +411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BE5CB127720BEC00382451 /* ViewController.swift in Sources */,
+				19BE5CB127720BEC00382451 /* ScanTabViewController.swift in Sources */,
 				19BE5CAD27720BEC00382451 /* AppDelegate.swift in Sources */,
+				19DD541A2772B1F70057E557 /* BaseTabBarController.swift in Sources */,
 				19BE5CAF27720BEC00382451 /* SceneDelegate.swift in Sources */,
+				190E0ED8277400D8000E0D05 /* StorageTabViewController.swift in Sources */,
 				19BE5CDD2772130C00382451 /* SkyskanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
