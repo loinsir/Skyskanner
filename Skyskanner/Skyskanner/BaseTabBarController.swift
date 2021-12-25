@@ -22,7 +22,7 @@ class BaseTabBarController: UITabBarController {
     }
     
     func setTabBarUI() {
-        tabBar.tintColor = .black
+        tabBar.tintColor = .systemGray
     }
 
 }

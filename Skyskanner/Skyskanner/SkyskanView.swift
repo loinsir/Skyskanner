@@ -17,13 +17,23 @@ enum SkyskanStatus {
 
 // delegate 프로토콜 선언
 protocol SkyskanViewDelegate {
-    func SkyskanView(_ : SkyskanView, status: SkyskanStatus)
+    func didScan(skyskanView : SkyskanView, status: SkyskanStatus)
 }
 
 class SkyskanView: UIView {
+    
     var previewLayer: AVCaptureVideoPreviewLayer? // 미리보기 레이어
     var captureSession: AVCaptureSession?
     var delegate: SkyskanViewDelegate?
+    
+    var centerGuideLineView: UIView?
+    
+    var isRunning: Bool {
+        guard let captureSession = captureSession else {
+            return false
+        }
+        return captureSession.isRunning
+    }
     
     let metadataOutputTypes: [AVMetadataObject.ObjectType] = [
         // 현재 책에 붙어 있는 바코드들은 EAN-13을 따른다
@@ -36,29 +46,37 @@ class SkyskanView: UIView {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        setCaptureSession()
     }
     
     private func setCaptureSession() {
         // 캡처 세션 인스턴스 화
+        clipsToBounds = true
         captureSession = AVCaptureSession()
         
         // 입력 설정
         guard let inputDevice = AVCaptureDevice.default(for: .video) else { return }
         
-        guard let captureSession = captureSession else { return }
+        let videoInput: AVCaptureDeviceInput
         
         do {
             // 감싸기
-            let videoInput = try AVCaptureDeviceInput(device: inputDevice)
-            
-            if captureSession.canAddInput(videoInput) {
-                captureSession.addInput(videoInput)
-            } else {
-                return
-            }
+            videoInput = try AVCaptureDeviceInput(device: inputDevice)
         } catch let error {
             print(error.localizedDescription)
+            return
+        }
+        
+        guard let captureSession = self.captureSession else {
+            return
+        }
+
+        if captureSession.canAddInput(videoInput) {
+            captureSession.addInput(videoInput)
+        } else {
+            fail(errorMessage: "Add Video Input Failed")
+            return
         }
         
         // 출력 설정
@@ -69,22 +87,46 @@ class SkyskanView: UIView {
             output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             output.metadataObjectTypes = metadataOutputTypes
         } else {
+            fail(errorMessage: "failed")
             return
         }
         
         setPreviewLayer()
+        setCenterGuideLineView()
     }
     
-    private func setPreviewLayer() {
+    func setPreviewLayer() {
         // 이미 연결이 설정된 세션을 인자로 넣어준다.
         guard let captureSession = captureSession else { return }
-        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+
+        layer.addSublayer(previewLayer)
+        self.previewLayer = previewLayer
         
-        guard let previewLayer = previewLayer else { return }
-        previewLayer.videoGravity = .resizeAspectFill
-        previewLayer.frame = self.layer.bounds
+        // 중요!: bounds로 frame 설정시 main스레드에서 실행되어야 한다.
+        DispatchQueue.main.async {
+            self.previewLayer?.frame = self.layer.bounds
+        }
+        self.previewLayer?.videoGravity = .resizeAspectFill
+    }
+    
+    private func setCenterGuideLineView() {
+        let centerGuideLineView = UIView()
+        centerGuideLineView.translatesAutoresizingMaskIntoConstraints = false
+        centerGuideLineView.backgroundColor = #colorLiteral(red: 1, green: 0.5411764706, blue: 0.2392156863, alpha: 1)
         
-        self.layer.addSublayer(previewLayer)
+        self.addSubview(centerGuideLineView)
+        self.bringSubviewToFront(centerGuideLineView)
+        
+        centerGuideLineView.snp.makeConstraints{ make in
+            make.trailing.equalTo(self.snp.trailing)
+            make.leading.equalTo(self.snp.leading)
+            make.centerY.equalTo(self.snp.centerY)
+            make.height.equalTo(1)
+        }
+
+
+        self.centerGuideLineView = centerGuideLineView
     }
 }
 
@@ -95,17 +137,18 @@ extension SkyskanView {
     
     func stop() {
         captureSession?.stopRunning()
-        delegate?.SkyskanView(self, status: .stop)
+        delegate?.didScan(skyskanView: self, status: .stop)
     }
     
     func fail(errorMessage: String?) {
         captureSession?.stopRunning()
-        delegate?.SkyskanView(self, status: .fail(errorMessage: errorMessage))
+        delegate?.didScan(skyskanView: self, status: .fail(errorMessage: errorMessage))
+        captureSession = nil
     }
     
     func success(code: String) {
         captureSession?.stopRunning()
-        delegate?.SkyskanView(self, status: .success(code: code))
+        delegate?.didScan(skyskanView: self, status: .success(code: code))
     }
 }
 
